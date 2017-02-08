@@ -1,0 +1,11 @@
+[05-Jan-2017 07:00:57 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[05-Jan-2017 07:00:57 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[05-Jan-2017 07:00:57 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/agenc138/public_html/clientes/demape-renovaveis/wp-content/themes/betheme/index.php on line 10

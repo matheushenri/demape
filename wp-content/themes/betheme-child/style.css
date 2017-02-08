@@ -1,0 +1,464 @@
+/*
+Theme Name: 	Betheme Child
+Theme URI: 		http://themes.muffingroup.com/betheme
+Author: 		Muffin group
+Author URI: 	http://muffingroup.com
+Description:	Child Theme for Betheme - Premium WordPress Theme
+Template:		betheme
+Version: 		1.6.1
+*/
+
+/* Theme customization starts here
+-------------------------------------------------------------- */
+/* ---------- HEADER ---------- */
+#Action_bar .contact_details li, #Action_bar .contact_details li a,
+#Action_bar .social-menu li, #Action_bar .social-menu li a{
+	font-size: 14px !important; color: #b2b2b2 !important;
+}
+#Action_bar{border-bottom: solid 1px #e1e1e1;}
+ul.sub-menu li a{
+	font-size: 14px;
+}
+
+.tel-topo{font-size: 16px; font-weight: 700;}
+.slogan{font-weight: 500}
+.social-menu{font-weight: 500}
+/* ---------- /HEADER ---------- */
+
+/* ---------- FONTS ---------- */
+.light{font-weight: 300;}
+.regular{font-weight: 400;}
+.medium{font-weight: 500;}
+.bold{font-weight: 700;}
+
+p.small, span.small{font-size: 15px; line-height: 20px;}
+p.size16{font-size: 16px;}
+
+.number-wrapper .prefix{font-size: 16px !important;}
+.number-wrapper .number, .number-wrapper .postfix{font-size: 47px !important; font-weight: 900;}
+.counter {
+	padding: 10px !important;
+}
+
+@media only screen and (min-width: 768px) {
+	#Top_bar.is-sticky #logo img:not(.svg) {
+		max-height: 49px !important;
+	}
+}
+
+/* ---------- /FONTS ---------- */x1
+
+/* ---------- COLORS ---------- */
+.green, .counter-green .number, .counter-green .postfix{color:#7ebf57 !important;}
+.orange, .counter-orange .number{color:#f58524 !important;}
+
+.bggreen{background:#7ebf57 !important;}
+.bgorange{background:#f58524 !important;}
+
+.border-left-green{
+	border-left:2px solid #7ebf57;
+	-webkit-border-image: 
+		-webkit-gradient(linear, 0 0, 0 100%, from(rgba(126,191,87,1)), to(rgba(199, 217, 0, 1))) 1 100%;
+	-webkit-border-image: 
+		-webkit-linear-gradient((rgba(126,191,87,1)), rgba(199, 217, 0, 1)) 1 100%;
+	-moz-border-image:
+		-moz-linear-gradient((rgba(126,191,87,1)), rgba(199, 217, 0, 1)) 1 100%;    
+	-o-border-image:
+		-o-linear-gradient((rgba(126,191,87,1)), rgba(199, 217, 0, 1)) 1 100%;
+	border-image:
+		linear-gradient(to bottom, (rgba(126,191,87,1)), rgba(199, 217, 0, 1)) 1 100%;
+}
+
+.border-left-orange{
+	border-left:2px solid #f58524;
+	-webkit-border-image: 
+		-webkit-gradient(linear, 0 0, 0 100%, from(rgba(245,133,36,1)), to(rgba(255, 193, 25, 1))) 1 100%;
+	-webkit-border-image: 
+		-webkit-linear-gradient((rgba(245,133,36,1)), rgba(255, 193, 25, 1)) 1 100%;
+	-moz-border-image:
+		-moz-linear-gradient((rgba(245,133,36,1)), rgba(255, 193, 25, 1)) 1 100%;    
+	-o-border-image:
+		-o-linear-gradient((rgba(245,133,36,1)), rgba(255, 193, 25, 1)) 1 100%;
+	border-image:
+		linear-gradient(to bottom, (rgba(245,133,36,1)), rgba(255, 193, 25, 1)) 1 100%;
+}
+.border-left-green div, .border-left-orange div, .border-left div{padding-left: 30px;}
+
+.btngreen{
+	color:#7ebf57 !important;
+	border:1px solid #7ebf57 !important;
+	font-weight: 500;
+	font-size: 19px;
+	border-radius: 5px !important;
+	padding-left: 20px !important; padding-right: 20px !important;
+	
+	/*padding: 1px;
+	background: #7ebf57;
+	background: -moz-linear-gradient(left,  #7ebf57 0%, #c7d900 100%) !important;
+	background: -webkit-linear-gradient(left,  #7ebf57 0%,#c7d900 100%) !important;
+	background: linear-gradient(to right,  #7ebf57 0%,#c7d900 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ebf57', endColorstr='#c7d900',GradientType=1 ) !important;*/
+}
+.btngreen:hover{
+	color:#c7d900 !important;
+	border:1px solid #c7d900 !important;
+}
+/*.btngreen .button_label, .btnorang .button_label{
+background: #fff;
+margin: 1px;
+}*/
+.btnorange{
+	color:#f58524 !important;
+	border:1px solid #f58524 !important;
+	font-weight: 500;
+	font-size: 19px;
+	border-radius: 5px !important;
+	padding-left: 20px !important; padding-right: 20px !important;
+	
+	/*-webkit-border-image: 
+		-webkit-gradient(linear, 0 0, 0 100%, from(rgba(245,133,36,1)), to(rgba(255, 193, 25, 1))) 1 100%;
+	-webkit-border-image: 
+		-webkit-linear-gradient((rgba(245,133,36,1)), rgba(255, 193, 25, 1)) 1 100%;
+	-moz-border-image:
+		-moz-linear-gradient((rgba(245,133,36,1)), rgba(255, 193, 25, 1)) 1 100%;    
+	-o-border-image:
+		-o-linear-gradient((rgba(245,133,36,1)), rgba(255, 193, 25, 1)) 1 100%;
+	border-image:
+		linear-gradient(to bottom, (rgba(245,133,36,1)), rgba(255, 193, 25, 1)) 1 100%;*/
+}
+.btnorange:hover{
+	color:#ffc426 !important;
+	border:1px solid #ffc426 !important;
+}
+/* ---------- /COLORS ---------- */
+
+/* ---------- UTILITIES ---------- */
+.floagright{float: right;}
+.titulo{
+	background: url(../../uploads/2016/12/tile-titulo.png) center center repeat-x;
+}
+.titulo h2{background-color: #fff; display: inline; padding: 20px 40px;}
+
+.margin0{margin: 0; width: 100% !important;}
+.style-simple .icon_box .image_wrapper, .style-simple .icon_box .icon_wrapper {
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+.divisor{min-height: 89px;}
+
+.style-simple .list_item .circle {
+	background-image: none;
+	box-shadow: none;
+	width: 47px;
+	height: 47px;
+	line-height: 47px;
+	color: #FFF;
+	background: #f7931f;
+	font-size: 20px;
+	font-weight: 400;
+}
+.residencial .section_wrapper .mcb-wrap .mcb-column .list_item .circle {
+	background-image: none;
+	box-shadow: none;
+	width: 47px;
+	height: 47px;
+	line-height: 47px;
+	color: #FFF;
+	background: #7ebf57;
+	font-size: 20px;
+	font-weight: 400;
+}
+.list_item.lists_4 .list_right {
+	padding-top: 15px;
+}
+.list_item .list_right {
+	margin-left: 80px;
+}
+.lista .column, .marginbottom0{margin-bottom: 0px;}
+
+/* ---------- /UTILITIES ---------- */
+
+/* ---------- HEADER ---------- */
+.social-header{
+	float: right;
+	margin-left: 10px;
+}
+#Action_bar .social-header .social li a{
+	color: #b3b3b3 !important;
+}
+/* ---------- /HEADER ---------- */
+
+/* ---------- FOOTER ---------- */
+#Footer{padding-top: 50px;}
+#Footer .footer_copy, #Footer .footer_copy a{
+	background: #7ebf57;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+#Footer .footer_copy .one {
+	margin-bottom: 15px;
+	padding-top: 20px;
+	min-height: 23px;
+}
+#Footer .footer_copy .social li a {
+	color: rgba(255,255,255,.6);
+	font-size: 17px;
+	line-height: 17px;
+}
+#Footer h4{
+	font-size: 14px;
+	font-weight: 900;
+}
+#Footer .widget_nav_menu ul {
+	list-style-type: square;
+	background: #fff;
+	font-size: 14px;
+	padding-left: 20px !important;
+}
+/* ---------- /FOOTER ---------- */
+
+/* ------------------------------------------------
+********************** PAGES **********************
+------------------------------------------------ */
+
+/* ---------- HOME ---------- */
+.counter.counter_horizontal .desc_wrapper {
+	padding-left: 75px !important;
+}
+.texto-sob-medida{
+	background: url(../../uploads/2016/12/sob-medida-elemento.png) left top no-repeat;
+	min-height: 390px;
+}
+.texto-sob-medida div{
+	padding:210px 0 0 85px;
+}
+/* ---------- /HOME ---------- */
+
+/* ---------- FAQ ---------- */
+
+.style-simple .faq .question.active .title{
+	border-left: solid 2px #7ebf57;
+	color: #7ebf57 !important;
+	font-weight: 500;
+}
+.faq p{
+	font-size: 16px;
+	line-height: 22px;
+}
+/* ---------- /FAQ ---------- */
+
+/* ---------- PORTFOLIO ---------- */
+.title_wrapper .post-meta, .single-photo-wrapper, .project-description{
+	display: none !important;
+}
+.get_in_touch, .infobox {
+	background-color: #7ebf57 !important;
+}
+/* ---------- /PORTFOLIO ---------- */
+
+/* -----------------------------------------------
+********************* /PAGES *********************
+----------------------------------------------- */
+
+/* ---------- MEDIA QUERIES - RESPONSIVE ---------- */
+@media screen and (max-width: 767px) {
+	.projetos-sob-medida{
+		background: url(../../uploads/2016/12/pattern.png) center top repeat;
+	}
+	.sob-medida-texto{
+		padding-top:50px;
+	}
+	.hidemobile{display: none !important;}
+}
+
+@media screen and (min-width: 768px){
+	.menu-line-below #Top_bar .menu > li > a:after {
+		bottom: 0 !important;
+	}
+	.projetos-sob-medida{
+		min-height: 390px;
+		background: url(../../uploads/2016/12/bg-projetos-sob-medida.jpg) center top no-repeat;
+	}
+	.projetos-sob-medida .column{margin-bottom: 15px;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+	.sob-medida-texto{
+		padding:220px 0 0 0;
+	}
+
+}
+
+@media only screen and (min-width: 1240px){
+	.sob-medida-texto{
+		padding:220px 90px 0 90px;
+	}
+}
+/* ---------- /FOOTER ---------- */
+
+
+/* CALCULADORA */
+
+div#calculator {
+	position: relative;
+	background: url(http://agenciacarbon.com.br/clientes/demape-renovaveis/wp-content/uploads/2016/12/pattern.png) repeat;
+	padding: 70px 0px;
+	margin-top: 50px;
+}
+
+div.overlay {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 800;
+}
+
+div.intro-text {
+	text-align: center;
+}
+
+div#calculator form {
+	margin-top: 30px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+div#calculator form div.input {
+	width: 50%;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+div#calculator form div.input input,
+div#calculator form div.input select {
+	width: 100%;
+	border: 0px;
+	border-bottom: 2px solid #80c055;
+	background: transparent;
+	font-size: 16px;
+	box-shadow: none;
+}
+
+div#calculator form div.input input::-webkit-input-placeholder {
+	color: #626262;
+}
+
+div#calculator form .button {
+	margin: 20px auto;
+	width: 300px;
+}
+
+div#calculator form .button button {
+	width: 300px;
+	background: #80c055 !important;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff !important;
+}
+
+div#calculator form .button button:focus {
+	outline: none;
+}
+
+input[type="text"]:focus {
+	background: #fff !important;
+	color: #626262;
+}
+
+select:focus {
+	background: #fff !important;
+	color: #626262;
+}
+
+#result {
+	display: none;
+	position: fixed;
+	z-index: 900;
+	top: 10%;
+	left: 50%;
+	margin-left: -300px;
+}
+
+#result .button {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#result .button .quote-button {
+	font-size: 17px;
+	margin: 0;
+}
+
+.quote{
+	display: none;
+}
+
+.result-content {
+	width: 100%;
+	max-width: 570px;
+	max-height: 500px;
+	overflow: auto;
+	margin: 0 auto;
+	background: #fff;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #525252;        
+}
+
+@media only screen and (max-width: 620px) {
+	#result {
+		margin-left: -175px;
+	}
+
+	.result-content {
+		max-width: 320px;
+	}
+
+	div#calculator form div.input {
+		width: 100%;
+	}
+}
+
+.result-content h4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.result-content table th {
+	width: 33%;
+}
+
+.quote .gfield_label {
+	display: none !important;
+}
+
+.quote .gform_footer {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.quote .button {
+	margin: 0px !important;
+}
+
+/*
+#Top_bar.is-sticky {
+	max-height: 50px !important;
+}*/
